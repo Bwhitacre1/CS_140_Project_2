@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\Node.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="OrderedList.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\Node.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\ordered_list_driver.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="OrderedList.cpp" />
+    <ClCompile Include="ordered_list_driver.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
