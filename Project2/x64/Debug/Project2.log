@@ -1,0 +1,3 @@
+﻿  OrderedList.cpp
+D:\Documents\Bradley 1st Year\CS 140 (Adv Programing)\Project_2\CS_140_Project_2\Project2\OrderedList.cpp(79): warning C4715: 'OrderedList::remove': not all control paths return a value
+  Project2.vcxproj -> D:\Documents\Bradley 1st Year\CS 140 (Adv Programing)\Project_2\CS_140_Project_2\x64\Debug\Project2.exe
