@@ -105,11 +105,15 @@ Node OrderedList::removeFront() {
 void OrderedList::clear() {
     Node* node;
     while (fNode != NULL) {
+        
         node = fNode;
         fNode = fNode->nextNode;
-        node->nextNode = NULL;
+
         delete node;
+        node->nextNode = NULL;
         node = NULL;
+        
+        
 
     }
     
@@ -120,13 +124,13 @@ void OrderedList::clear() {
 
 void OrderedList::absorb(OrderedList& absorbNode) {
     Node* currentNode = absorbNode.fNode;
-    Node* previousNode = NULL;
+    
 
     while (currentNode != NULL) {
-        insert(*currentNode);
-        previousNode = currentNode;
-        //absorbNode.remove(*currentNode);
-        currentNode = previousNode->nextNode;
+        Node removedNode = absorbNode.removeFront();
+        insert(removedNode);
+        currentNode = currentNode->nextNode;
+
     }
 
     //delete currentNode;
